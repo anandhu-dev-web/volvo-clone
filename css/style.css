@@ -192,12 +192,78 @@ body{
 .drop-down{
     position: relative;
 }
-    .drop-down::after{
-        content: '';
-        bottom: 0%;
-        position: absolute;
-        height: 2px;
-        width: 85%;
-        border-bottom: 1px solid rgb(208, 208, 208);
-        
-    }
+.drop-down::after{
+    content: '';
+    bottom: 0%;
+    position: absolute;
+    height: 2px;
+    width: 85%;
+    border-bottom: 1px solid rgb(208, 208, 208);
+}
+.link-main-text{
+    list-style: none;
+}
+.link-main-heading{
+    font-size:13px;
+}
+.link-main-text li span{
+    position: relative;
+    cursor: pointer;
+    font-size: medium;
+}
+.link-main-text li span:hover::after{
+    position: absolute;
+    content: '';
+    height: 2.5px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+}
+footer{
+    background-color: rgb(244, 244, 244);
+}
+.contact-icons{
+    list-style: none;
+}
+.contact-icons li{
+    display: inline-block;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 10px 10px ;
+    cursor: pointer;
+}
+.contact-icons li:hover{
+    background-color: rgb(234, 234, 234);
+}
+.cookies-links{
+    list-style-type: none
+}
+.cookies-links li{
+    display: inline-block;
+    margin: 0px 5px;
+}
+.cookies-links a{
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+    font-weight: lighter;
+    position: relative;
+}
+.cookies-links a:hover::after{
+    width: 100%;
+}
+.cookies-links a::after{
+    content: '';
+    position: absolute;
+    background-color: gray;
+    height: 2px;
+    width: 0%;
+    bottom: -1px;
+    left: 0;
+}
+.copy-right{
+    font-size: 12px;
+    color: gray;
+    font-weight: lighter;
+}
